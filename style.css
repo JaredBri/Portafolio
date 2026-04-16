@@ -1,0 +1,67 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.strotitle{
+    background-color: black;
+    color: brown;
+    border-radius: 25%;
+}
+
+header{
+    background: rgb(117, 117, 172);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.linknav{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 15px;
+}
+
+nav{
+    background-color: rgb(48, 48, 180);
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    color: aliceblue;
+    padding: 25px;
+
+}
+
+strong{
+    color: rgb(33, 129, 105);
+}
+
+img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+div{
+    display: block;
+}
+
+.col{
+    flex-direction: column;
+    display: flex;
+    text-align: left;
+}
+
+.space{
+    padding: 25px 0px;
+}
