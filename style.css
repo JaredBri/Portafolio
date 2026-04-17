@@ -4,64 +4,139 @@
     padding: 0;
 }
 
-.strotitle{
-    background-color: black;
-    color: brown;
-    border-radius: 25%;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
 
 header{
-    background: rgb(117, 117, 172);
-    color: aliceblue;
+    background-color: rgba(34, 56, 86, 0.742);
+    color: white;
     display: flex;
     align-items: center;
-    text-align: center;
-    width: 100%;
+    padding: 10px 5%;
 }
 
-a{
-    text-decoration: none;
-    color: aliceblue;
-}
-
-.linknav{
-    display: flex;
-    width: 100%;
-    justify-content: end;
-    gap: 15px;
+header img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 nav{
-    background-color: rgb(48, 48, 180);
-    align-items: end;
-    justify-content: center;
     display: flex;
-    color: aliceblue;
-    padding: 25px;
-
+    flex-grow: 1;
+    justify-content: flex-end;
 }
 
-strong{
-    color: rgb(33, 129, 105);
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
 }
 
-img{
+nav a:hover{
+    transition:0.3s ease;
+    color: brown;
+}
+
+.hero{
+    background-color: #0d0d2fe7;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10%;
+}
+
+.espacio{
+    margin-top: 25px;
+    max-width: 500px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+}
+
+aside img{
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    width: 100px;
-    height: 100px;
+    border: 8px solid rgba(255, 255, 255, 0.1);
 }
 
-div{
-    display: block;
+article h1 strong{
+    color: rgb(74, 84, 214,08);
 }
 
-.col{
-    flex-direction: column;
+/* Sobre mi */
+.sobreMi-detalle{
+    padding: 80px 10%;
+    background-color: #f8fafd;
+}
+
+.cajaTitulo{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #223856;
+}
+
+h2{
+    text-decoration: underline;
+    text-decoration-color: #f39c12;
+    margin: 10px auto;
+}
+
+.sobreMi-flex{
     display: flex;
-    text-align: left;
+    gap: 50px;
+    align-items: flex-start;
 }
 
-.space{
-    padding: 25px 0px;
+.infoPersonal p{
+    color: #223856;
+    margin: 20px 0px;
+}
+
+.cita{
+    background-color: #f7fafc;
+    border-left: 5px solid #f39c12;
+    padding: 20px;
+    margin-top: 30px;
+    font-style: italic;
+    border-radius: 0 10px 10px 0;
+}
+
+.tarjetaDatos{
+    background: white;
+    padding: 30px 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: #223856;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjetaDatos h3{
+    color: #223856;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 10px;
+}
+
+.tarjetaDatos ul {
+    list-style: none;
+}
+
+.tarjetaDatos li {
+    padding: 12px 0;
+    border-bottom: 1px solid #edf2f7;
+    color: #4a5568;
+    display: flex;
+    justify-content: flex-start;
 }
