@@ -148,7 +148,7 @@ h2{
 }
 
 .habilidades-contenedor{
-    width: 100%;
+
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
@@ -208,4 +208,31 @@ h2{
 .p55{
     width: 55%;
     background-color: red;
+}
+
+.lista-habilidades{
+    color: #223856;
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.tarjeta-lista{
+    background: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 45px;
+    padding-right: 100px;
+    border-radius: 15px;
+    flex: 1;
+}
+
+.tarjeta-lista h3{
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.tarjeta-lista ul, .tarjeta-lista ol{
+    padding-left: 20px;
 }
