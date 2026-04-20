@@ -227,6 +227,53 @@
                 </article>
             </div>
         </section>
+
+        <section id="Contacto" class="Contacto-detalle">
+            <div class="cajaTitulo">
+                 <h2>Contacto</h2>
+               <p>Énviame un mensaje</p>
+            </div>
+            <div class="contacto-contenedor">
+                <form action="/contacto" class="formulario" method="post">
+                    <div class="fila">
+                        <div class="campo">
+                            <label for="nombre">Nombre Completo:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                        </div>
+                        <div class="campo">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="Tu@email.com">
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="asunto">Asunto</label>
+                        <select name="asunto" id="asunto">
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta">Consulta General</option>
+                            <option value="colaboracion">colaboracion</option>
+                            <option value="error">Reportar error</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" rows="5" 
+                        required minlength="10" placeholder="Escribe tu mensaje aqui..."></textarea>
+                    </div>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+                <aside class="info-contacto">
+                    <h3>Información de Contacto</h3>
+                    <ul>
+                        <li>📧 yajairobriones@gmail.com</li>
+                        <li>📍 Concepción, Chile</li>
+                        <li>📱 +56 9 2217 6893</li>
+                        <li>🌐 github.com/JaredBri</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
     </main>
 </body>
 </html>
