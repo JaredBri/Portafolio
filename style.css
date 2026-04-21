@@ -397,7 +397,7 @@ h2{
 .campo input, .campo select, .campo textarea{
     padding: 12px;
     border-radius: 8px;
-    border: 1 solid #d1d5db;
+    border: 1px solid #d1d5db;
     font-size: 14px;
 }
 
@@ -516,4 +516,73 @@ h2{
     padding: 15px;
     background-color: #1a2c45;
     font-size: 0.9rem;
+}
+
+/* ---------------TABLET--------------- */
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .sobreMi-flex {
+        flex-direction: column;
+    }
+
+    .lista-habilidades {
+        flex-direction: column;
+    }
+
+    .proyectos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fila {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* ---------------CELULAR--------------- */
+
+@media (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .espacio {
+        max-width: 100%;
+    }
+
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-lista {
+        padding: 25px;
+    }
+
+    .footer-contenedor {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-redes ul {
+        justify-content: center;
+    }
 }
